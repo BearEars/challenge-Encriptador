@@ -1,0 +1,287 @@
+*{
+  background-color: #E6E6FA; 
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 10%;
+}
+
+body{
+  width: 940px;
+}
+
+main{
+  margin: auto;
+  display: flex;
+  padding: 0 50% 0 200px;
+}
+
+.areaIngresoDeTexto{
+  text-transform: lowercase;
+  border-style: none;
+  color: #0A3871;
+  width: 400px;
+  height:340px;
+  margin-right: 10%;
+  padding: 15px;
+
+}
+::placeholder{color: #0A3871;}
+   .text-area :focus{
+     outline: none; 
+    }
+
+.textoResultado{
+  width: 240px;
+  height: 460px;
+  background-color: white;
+  background-image: url(img/mensaje-escritorio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 20px;
+  color: #2E4053;
+  margin: 0 0 0 40px;
+  padding: 15px;
+  position: absolute;
+  background-size: 200px;
+  box-shadow: 5px 5px 10px 1px grey;
+  
+}
+.texto:focus{
+   outline: none;
+}
+
+
+.informacion{
+  font-size: 15px;
+  color: #495057;
+  margin-top: 5px;
+}
+
+.informacion::before{
+  content: "🛈";
+}
+
+.botones{
+  display: flex;
+  margin-top: 18px;
+  
+}
+
+.btnEncriptar{
+  background: #0A3871; /* color de fondo */
+  color: aliceblue; /* color de fuente */
+  border: 1px solid #0A3871; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 24px; /* redondear bordes */
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 500ms;
+  box-shadow: 5px 5px 10px 1px grey;
+  
+}
+
+.btnEncriptar:hover {
+  color: aliceblue;
+  transform: scale(1.1);
+}
+
+.btnDesencriptar{
+  background: #D8DFE8; 
+  color: #0A3871; 
+  border: 1px solid #0A3871; 
+  padding: 16px 20px;
+  border-radius: 24px; 
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 30px;
+  transition: 500ms;
+  box-shadow: 5px 5px 10px 1px grey;
+    
+}
+
+.btnDesencriptar:hover {
+  color: #0A3871; 
+  transform: scale(1.1);
+}
+
+/*para mejorar e investigar mas sobre las propiedades de copiar en html5*/
+/*
+.contenedorBtnCopiar{
+  margin-top:420px ;
+  margin-left: 31px;
+}
+
+.btnCopiar{
+  background: #D8DFE8; 
+  color: #0A3871; 
+  border: 1px solid #0A3871; 
+  padding: 16px 20px;
+  border-radius: 24px; 
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 500ms;
+  box-shadow: 5px 5px 10px 1px grey;
+    
+}
+.btnCopiar:hover {
+  color: aliceblue;
+  transform: scale(1.1);
+}*/
+
+/*---------responsive telefono--------*/
+
+@media screen and (max-width:480px){
+
+  .logo{
+    padding-top: 10%;
+    width: 30%;
+    
+  }
+
+  main{
+    display: inline-block;
+    padding: 60px 5% 30px 5%;
+    text-align: center;
+  }
+
+  body{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .areaIngresoDeTexto{
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .informacion{
+    text-align: left;
+  }
+
+  .textoResultado{
+    width: 80%;
+    height: 200px;
+    background-image: none;
+    margin: 30px auto 60px auto;
+    position: relative;
+    background-image: url(img/mensaje.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+
+  .botones{
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center; 
+  }
+
+  .btnEncriptar{
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .btnDesencriptar{
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
+    margin: 1em 0 0 0 ;  
+  }
+  
+}
+
+/*------responsive tablet-------*/
+
+@media screen and (min-width:481px) and (max-width: 880px) {
+
+  .logo{
+    padding-top: 10%;
+    width: 20%;
+    
+  }
+
+  main{
+    display: inline-block;
+    padding: 60px 5% 30px 5%;
+    text-align: center;
+  }
+
+  body{
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .areaIngresoDeTexto{
+    width: 100%;
+    height: 550px;
+  
+  }
+
+  .textoResultado{
+    width: 95%;
+    height: 100px;
+    background-image: none;
+    margin: 30px auto auto auto;
+    position: relative;
+    background-image: url(img/mensaje-tablet.png);
+
+    background-size: 80%;
+  }
+
+  .informacion{
+    text-align: left;
+  }
+
+  .botones{
+    margin-top: 20px;
+    text-align: center; 
+    width: 100%;
+  }
+
+  .btnEncriptar{
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .btnDesencriptar{
+    padding: 10px 10px;
+    height: 60px;
+    width: 100%;
+  
+  }
+
+  
+  
+}
+
+
+
+
+
+
