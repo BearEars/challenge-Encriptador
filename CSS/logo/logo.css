@@ -1,0 +1,21 @@
+.logo {
+    padding: 10px 0 0 10px;
+    width: 7%;
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    .logo {
+        padding: 0;
+        width: 10%;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .logo {
+        padding: 2%;
+        width: 20%;
+    }
+}

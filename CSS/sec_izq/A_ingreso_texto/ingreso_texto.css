@@ -1,0 +1,29 @@
+.areaIngresoDeTexto {
+    text-transform: lowercase;
+    border-style: none;
+    color: #0A3871;
+    max-width: 500px;
+    height: 55vh;
+    padding: 15px;
+
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    .areaIngresoDeTexto {
+        width: 85%;
+        height: 40vh;
+        font-size: 25px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .areaIngresoDeTexto {
+        width: 90%;
+        height: 40vh;
+        font-size: 25px;
+    }
+}

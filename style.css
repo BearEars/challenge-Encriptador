@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  background-color: #E6E6FA;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  width: 100%;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 10%;
+
+}
+
+::placeholder {
+  color: #0A3871;
+}
+
+/*---------responsive telefono--------*/
+
+@media screen and (max-width:1023px) {
+
+
+  .mainContainer {
+    display: inline-block;
+    padding: 60px 5% 30px 5%;
+    text-align: center;
+  }
+
+  body {
+    width: 90%;
+  }
+
+}
+
+/*------responsive tablet-------*/
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
+  .mainContainer {
+    width: 100%;
+    display: inline-block;
+    padding: 60px 5% 30px 5%;
+    text-align: center;
+  }
+
+  body {
+    width: 100%;
+  }
+
+}

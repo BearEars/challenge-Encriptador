@@ -1,0 +1,40 @@
+.textoResultado {
+    width: 20vw;
+    min-width: 265px;
+    height: 70vh;
+    background-color: white;
+    background-image: url(/img/mensaje-escritorio.png);
+    background-repeat: no-repeat;
+    background-size: covers;
+    background-position: center;
+    border: none;
+    border-radius: 20px;
+    color: #2E4053;
+    padding: 15px;
+    background-size: 200px;
+    box-shadow: 5px 5px 10px 1px grey;
+}
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+    .textoResultado {
+        width: 90vw;
+        height: 30vh;
+        background-image: url(/img/mensaje.png);
+        font-size: 25px;
+        margin-top: 30px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .textoResultado {
+        width: 90vw;
+        height: 30vh;
+        margin-top: 5vh;
+        position: relative;
+        background-image: url(/img/mensaje-tablet.png);
+        background-size: 60%;
+    }
+}
