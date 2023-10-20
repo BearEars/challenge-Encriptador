@@ -1,0 +1,16 @@
+.informacion {
+    font-size: 15px;
+    color: #495057;
+    margin-top: 5px;
+}
+
+.informacion::before {
+    content: "🛈";
+}
+
+/* responsive (mobile - tablet) */
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .informacion {
+        text-align: left;
+    }
+}
